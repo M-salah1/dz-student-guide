@@ -1,0 +1,33 @@
+name: تصحيح أو تحديث
+description: أبلغ عن معلومة خاطئة أو قديمة أو رابط معطل.
+title: "[تصحيح]: "
+labels: ["تصحيح"]
+body:
+  - type: input
+    id: record
+    attributes:
+      label: رابط السجل أو مساره
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: ما الذي يحتاج إلى تصحيح؟
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: مصدر التصحيح
+  - type: input
+    id: checked
+    attributes:
+      label: تاريخ التحقق
+      placeholder: YYYY-MM-DD
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: الخصوصية
+      options:
+        - label: لا يحتوي البلاغ على بيانات شخصية.
+          required: true
