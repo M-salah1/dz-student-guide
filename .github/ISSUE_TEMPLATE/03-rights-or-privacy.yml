@@ -1,0 +1,20 @@
+name: حقوق نشر أو خصوصية
+description: أبلغ بأمان عن محتوى قد ينتهك الحقوق أو يكشف بيانات شخصية.
+title: "[حقوق أو خصوصية]: وصف مختصر"
+labels: ["مراجعة عاجلة"]
+body:
+  - type: markdown
+    attributes:
+      value: "لا ترفق بيانات شخصية أو أسرارًا. إذا كان البلاغ حساسًا، تواصل خاصًا مع مشرفي المستودع."
+  - type: input
+    id: location
+    attributes:
+      label: رابط الملف أو المورد
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: وصف مختصر للمشكلة
+    validations:
+      required: true
